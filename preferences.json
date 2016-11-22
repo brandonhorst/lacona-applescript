@@ -1,0 +1,26 @@
+{
+  "header": {
+    "type": "header",
+    "examples": [
+      "run [![](icon.png)Time of Day](applescript)"
+    ]
+  },
+  "enableGlobalScripts": {
+    "title": "Index System Scripts Directory",
+    "description": "Look for Applescript files in `/Library/Scripts`",
+    "type": "boolean",
+    "default": true
+  },
+  "enableUserScripts": {
+    "title": "Index User Scripts Directory",
+    "description": "Look for Applescript files in `~/Library/Scripts`",
+    "type": "boolean",
+    "default": true
+  },
+  "customScriptsDirectory": {
+    "title": "Other Scripts Directory",
+    "description": "Also look for Applescript files in this directory",
+    "type": "string",
+    "default": ""
+  }
+}

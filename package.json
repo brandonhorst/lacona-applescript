@@ -1,0 +1,66 @@
+{
+  "name": "lacona-applescript",
+  "version": "1.0.0",
+  "description": "Lacona Addon to run Applescript script files",
+  "main": "lib/index.js",
+  "lacona": {
+    "title": "AppleScript",
+    "description": "Run Applescript script files",
+    "iconURL": "https://raw.githubusercontent.com/brandonhorst/lacona-applescript/master/icon.png",
+    "examples": [
+      "run [![](https://raw.githubusercontent.com/brandonhorst/lacona-applescript/master/icon.png)Time of Day](applescript)"
+    ],
+    "customPreferences": true,
+    "engine": ">=1.1.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "clean": "rimraf lib",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "lacona",
+    "lacona-addon"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonhorst/lacona-github.git"
+  },
+  "dependencies": {
+    "elliptical": "^2.0.0",
+    "expand-home-dir": "0.0.3",
+    "globby": "^6.1.0",
+    "lacona-api": "^1.4.0",
+    "lacona-phrases": "^1.0.1",
+    "lacona-source-helpers": "^2.0.2",
+    "lodash": "^4.15.0",
+    "mz": "^2.6.0",
+    "opn": "^4.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-preset-es2015-node": "^6.1.1",
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "rimraf": "^2.5.4"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node"
+    ],
+    "plugins": [
+      "transform-async-to-generator",
+      "syntax-async-functions",
+      "transform-react-jsx"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/brandonhorst/lacona-github/issues"
+  },
+  "homepage": "https://github.com/brandonhorst/lacona-github#readme",
+  "author": "Brandon Horst <brandonhorst@gmail.com> (http://brandonhorst.me/)"
+}
